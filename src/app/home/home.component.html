@@ -1,0 +1,126 @@
+<!-- <p>home works!</p> -->
+
+<div class="container mt-3">
+    <div class="empdiv">
+        <button
+          href="#"
+          class="btn btn-primary mb-3 addemp"
+          (click)="addEmp()"
+        >
+          <i class="fa-solid fa-user-plus"></i> Add Employee
+        </button>
+        
+        <h2 class="emptitle"  (click)="ngOnInit()">Employee List </h2> 
+        <div id="searchInput"  class="empdiv">
+          <input type="text" #searchInput class="form-control search" placeholder="Search">
+          <button class="btn btn-success" type="submit" (click)="getEmpsName(searchInput.value)">Go</button> 
+        </div>
+      </div>
+      <table class="table table-striped tblbg">
+        <thead>
+            <tr>
+              <th>Actions</th>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td>
+                    <div class="row">
+                      <div class="col-4">
+                        <i
+                          type="button"
+                          (click)="onEdit(emp.empid)"
+                          class="fa-solid fa-user-pen text-warning"
+                        ></i>
+                      </div>
+                      <div class="col-4">
+                        <i
+                          class="fa-solid fa-eye text-info"
+                          type="button"
+                          data-bs-toggle="modal" data-bs-target="#myModal" (click)="selectedEmp=emp; clickedView=true"
+                        ></i>
+                      </div>
+                      <div class="col-4">
+                        <i
+                          type="button"
+                          class="fa-solid fa-user-xmark text-danger"
+                          data-bs-toggle="modal" data-bs-target="#myModal" (click)="selectedEmp=emp;clickedView=false"
+                        ></i>
+                      </div>
+                    </div>
+                </td>
+                <td>{{emp.empid}}</td>
+                <td>{{emp.empname}}</td>
+                <td>{{emp.empphone}}</td>
+                <td>{{emp.empemail}}</td>
+                <td>{{emp.empdeptname}}</td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content viewbg">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 [class]="'modal-title w-100  text-center text-'+(clickedView?'info':'danger')" >{{!clickedView?'Delete Warning ⚠':'View Details 👁'}}</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body --> 
+        <div class="modal-body ">
+          <table class="popup">
+            <tbody>
+              <tr>
+                <td><b>Name</b> </td>: 
+                <td>{{selectedEmp.empname}}</td>
+              </tr>
+              <tr>
+                <td><b>Email</b> </td>: 
+                <td>{{selectedEmp.empemail}}</td>
+              </tr>
+              <tr>
+                <td><b>Phone Number</b> </td>:
+                <td>{{selectedEmp.empphone}}</td>
+              </tr>
+              <tr>
+                <td><b>Address</b></td>:
+                <td>{{selectedEmp.empaddress}}</td>
+              </tr>
+              <tr>
+                <td><b>State</b></td>:
+                <td>{{selectedEmp.empstatename}}</td>
+              </tr>
+              <tr>
+                <td><b>City</b></td>:
+                <td>{{selectedEmp.empcityname}}</td>
+              </tr>
+              <tr>
+                <td><b>Department</b></td>:
+                <td>{{selectedEmp.empdeptname}}</td>
+              </tr>
+              <tr>
+                <td><b>Gender</b></td>:
+                <td>{{selectedEmp.empgendername}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" *ngIf="!clickedView" (click)="deleteEmployee()"
+          >Delete</button>
+          <button type="button" class="btn btn-dark " data-bs-dismiss="modal">Cancel</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>

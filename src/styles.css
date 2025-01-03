@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+.d-center,
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgimg{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/023/824/046/small_2x/businessman-hand-pressing-human-resources-button-human-resources-hr-management-employment-headhunting-concept-hand-holding-modern-social-buttons-on-virtual-background-photo.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: auto;
+}
+.bgblur{
+    background: rgba(46, 43, 43, 0.13) !important;
+    color: rgb(231, 0, 0) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+table.tblbg,table.tblbg th,table.tblbg tr,table.tblbg td{
+    background: rgba(46, 43, 43, 0.13) !important;
+    color: #3a0000 !important;
+}
+.tblbg b{
+    color: red !important;
+}
+table.tblbg{
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.icon{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color:#9638d18c;
+}
+.viewbg{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/580db1af-64c9-41d7-b68e-93d28cb96d94/dfhvq3h-cd187b7f-1ecb-48ae-82f8-8de68690a2da.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU4MGRiMWFmLTY0YzktNDFkNy1iNjhlLTkzZDI4Y2I5NmQ5NFwvZGZodnEzaC1jZDE4N2I3Zi0xZWNiLTQ4YWUtODJmOC04ZGU2ODY5MGEyZGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yLo95FkG_0uvJP3UHwOXdS0Ys3OLDs1cKC-4T2KvPpY);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+.popup{
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.popup b{
+    color: #6e0d28db;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

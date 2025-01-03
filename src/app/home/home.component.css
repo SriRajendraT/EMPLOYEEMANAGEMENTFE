@@ -1,0 +1,27 @@
+.table{
+    margin-top: 10px;
+    text-align: center;
+}
+.addemp{
+    width: auto;
+}
+.empdiv{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.emptitle{
+    text-align: center;
+    color: whitesmoke !important;
+} 
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#searchInput{
+    width: 35%;
+}
