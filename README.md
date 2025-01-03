@@ -1,4 +1,22 @@
-# EMPLOYEEMANAGEMENTFE
+# Employee Management System Frontend
+
+This project is the frontend application for managing employee data, built with Angular. It interfaces with the backend API to provide a user-friendly interface for performing CRUD operations on employee records.
+
+## Features
+
+- **Employee List View:** Displays a table of all employees with their details.
+- **View Employee Details:** View detailed information of a selected employee.
+- **Add New Employee:** Form to add a new employee to the system.
+- **Edit Employee:** Update details of an existing employee.
+- **Delete Employee:** Remove an employee from the system.
+
+## Prerequisites
+
+- **Node.js:** Ensure that Node.js is installed on your machine. You can download it from [nodejs.org](https://nodejs.org/).
+- **Angular CLI:** Install the Angular CLI globally using npm:
+
+  ```bash
+  npm install -g @angular/cli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
