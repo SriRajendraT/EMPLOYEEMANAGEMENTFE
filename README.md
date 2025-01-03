@@ -20,7 +20,7 @@ This project is the frontend application for managing employee data, built with 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
-# Technologies Used
+## Technologies Used
 - **Framework:** Angular
 - **Language:** TypeScript
 - **Styling:** CSS
