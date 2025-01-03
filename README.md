@@ -20,6 +20,12 @@ This project is the frontend application for managing employee data, built with 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
+#Technologies Used
+- **Framework:** Angular
+- **Language:** TypeScript
+- **Styling:** CSS
+- **HTTP Client:** Angular's HttpClient
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
