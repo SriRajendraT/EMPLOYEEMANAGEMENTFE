@@ -10,10 +10,6 @@ export class Employee
     empstate:number;
     empcity:number;
     empsal:number;
-    empdoj:Date;
-    empdob:Date;
-    //ACTIVEFLAG:string;
-    //DELETEFLAG:string;
 }
 
 export class EmpExt extends Employee {

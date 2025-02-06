@@ -18,18 +18,7 @@
                     <small *ngIf="empFormGroup.controls['empname'].hasError('required')">Name is required.</small>
                   </div>
                 </div>
-                <div class="form-group mb-3">
-                  <label for="empdob" class="form-label">Date of Birth</label>
-                  <input
-                    type="date"
-                    formControlName="empdob"
-                    id="empdob"
-                    class="form-control"
-                  />
-                  <div *ngIf="empFormGroup.controls['empdob'].touched && empFormGroup.controls['empdob'].invalid" class="text-danger">
-                    <small *ngIf="empFormGroup.controls['empdob'].hasError('required')">Date of Birth is required.</small>
-                  </div>
-                </div>
+                
                 <div class="form-group mb-3">
                   <label for="empemail" class="form-label">Email</label>
                   <input
@@ -43,18 +32,7 @@
                     <small *ngIf="empFormGroup.controls['empemail'].hasError('email')">Enter a valid email address.</small>
                   </div>
                 </div>
-                <div class="form-group mb-3">
-                  <label for="empdoj" class="form-label">Date of Joining</label>
-                  <input
-                    type="date"
-                    formControlName="empdoj"
-                    id="empdoj"
-                    class="form-control"
-                  />
-                  <div *ngIf="empFormGroup.controls['empdoj'].touched && empFormGroup.controls['empdoj'].invalid" class="text-danger">
-                    <small *ngIf="empFormGroup.controls['empdoj'].hasError('required')">Date of joining is required.</small>
-                  </div>
-                </div>
+                
                 <div class="form-group mb-3">
                   <label for="empphone" class="form-label">Phone Number</label>
                   <input

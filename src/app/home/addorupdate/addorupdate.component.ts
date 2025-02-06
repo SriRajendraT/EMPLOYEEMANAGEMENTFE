@@ -122,15 +122,9 @@ export class AddorupdateComponent implements OnInit {
 
   async addOrUpdateEmp() {
     let emp = this.empFormGroup.value as Employee;
-    if (emp.empid > 0) {
-      (await this.empapi.addOrUpdateEmp(emp)).subscribe((result: boolean) => {
-        if (result) this.onBack();
-      });
-    } else {
-      (await this.empapi.addOrUpdateEmp(emp)).subscribe((result: boolean) => {
-        if (result) this.onBack();
-      });
-    }
+    await (await this.empapi.addOrUpdateEmp(emp)).subscribe((result:boolean)=>{
+      if (result) this.onBack();
+    });
   }
 
   async onView() {
